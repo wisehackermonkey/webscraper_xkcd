@@ -2,17 +2,18 @@ var request = require("request");
 var cheerio = require('cheerio');
 
 var download = require('./lib/download')
-var opn = require('opn');
-var fs = require('fs');
+
 var websiteURL = 'https://xkcd.com/';
-var xkcdURLs = [];
+
 var http = 'http://';
+
+
 //generate xkcd commic page urls
 //106 - 1861 is .png
 var start  = 106;
 var end = 1861;
 
-for(var i = 0; i <= end - start ; i++){
+for(var i = 0; i <= start + 20 ; i++){
 	var x = (i + start);
 	scrapeXKCD(websiteURL + x +'/', x);
 }
