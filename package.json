@@ -1,0 +1,20 @@
+{
+  "name": "phantom",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "wisemonkey",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "opn": "^5.1.0",
+    "request": "^2.81.0",
+    "request-progress": "^3.0.0",
+    "scraper": "0.0.9"
+  },
+  "devDependencies": {},
+  "description": ""
+}
